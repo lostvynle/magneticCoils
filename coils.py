@@ -2,7 +2,6 @@
 from scipy.special import ellipe,ellipk
 import numpy as np
 from numpy.linalg import norm,inv
-from physcon import mu_0,u,mu_B
 import pylab as pb
 
 """ Calculates magnetic field due to a coil or coil array (multi-winding coil)
@@ -14,6 +13,9 @@ These can then be summed up to calculate the field for any coil configuration ma
 Running the module will run an example of a Helmholtz coil configuration
 
 """
+mu_0 = 1.25663706144e-06 # N/A^2
+
+
 class Coil(object):
     """
     returns the magnetic field from one arbitrary current loop calculated from
@@ -274,6 +276,7 @@ if __name__ == "__main__":
     print sizex,sizez
     size = np.max([sizex,sizez])
     N=20.0    # number of grid points per axis
+    N=5
     i=j=pb.arange(N)
     n=float(N)
     x = ((i/(n-1))-.5)*size*2
@@ -312,4 +315,5 @@ if __name__ == "__main__":
     pb.text(0,0,s,size=8)
     pb.title('gauss per amp')
     print Ca1.dimensions
+    print mu_0
     pb.show()
