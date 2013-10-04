@@ -276,7 +276,6 @@ if __name__ == "__main__":
     print sizex,sizez
     size = np.max([sizex,sizez])
     N=20.0    # number of grid points per axis
-    N=5
     i=j=pb.arange(N)
     n=float(N)
     x = ((i/(n-1))-.5)*size*2
@@ -315,5 +314,4 @@ if __name__ == "__main__":
     pb.text(0,0,s,size=8)
     pb.title('gauss per amp')
     print Ca1.dimensions
-    print mu_0
     pb.show()
