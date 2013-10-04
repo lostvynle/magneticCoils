@@ -1,0 +1,9 @@
+TO DO:
+
+- improve docstring
+- add examples folder with examples of more coil configuration and anti-Helmholtz with gradient.
+- add multi processor capability
+- add class for multiple coil arrays that will provide grid automatically.
+- improve speed if possible
+    - use symmetry
+    - use approximations

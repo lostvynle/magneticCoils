@@ -1,0 +1,8 @@
+This module was developed to calculate the field primarily for Helmholtz 
+and Anti-Helmholtz coil configurations used in cold atom experiments.
+
+It is designed for circular windings of wires who's diameter is small compared to the coil diameter.
+it assumes all the current is in the center of each winding.  It is pretty accurate under these conditions:
+Suitable for most cold atom experiments.
+
+The CoilArray class assuming uniform separation between windings in each direction (dr axial, and dR radial)

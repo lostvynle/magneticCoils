@@ -5,11 +5,14 @@ from numpy.linalg import norm,inv
 from physcon import mu_0,u,mu_B
 import pylab as pb
 
-"""
+""" Calculates magnetic field due to a coil or coil array (multi-winding coil)
+
 This module contains two classes: Coil and CoilArray.
-Mostly one will use coil array to define a multi-winding coil at some location and orientation.
+Mostly one will use CoilArray to define a multi-winding coil at some location and orientation.
 These can then be summed up to calculate the field for any coil configuration made of circular coils.
+
 Running the module will run an example of a Helmholtz coil configuration
+
 """
 class Coil(object):
     """
